@@ -1,11 +1,15 @@
-from .db import db
+from .db import db, environment, SCHEMA, add_prefix_for_prod
+
 
 class Order(db.Model):
     __tablename__ = 'orders'
+    if environment == "production":
+        __table_args__ = {'schema': SCHEMA}
+
     id = db.Column(db.Integer, primary_key=True)
     order_number = db.Column(db.BigInteger, nullable=False)
-    buyer_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    product_id =db.Column(db.Integer, nullable=False)
+    buyer_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod('users.id')), nullable=False)
+    product_id = db.Column(db.Integer, nullable=False)
     quantity = db.Column(db.Integer, nullable=False)
     created_at = db.Column(db.DateTime, nullable=False)
     updated_at = db.Column(db.DateTime, nullable=False)
