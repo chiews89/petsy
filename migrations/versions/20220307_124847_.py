@@ -79,8 +79,13 @@ def upgrade():
                     sa.ForeignKeyConstraint(['product_id'], ['products.id'], ),
                     sa.PrimaryKeyConstraint('id')
                     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE <table_name> SET SCHEMA {SCHEMA};")
+if environment == "production":
+        op.execute(f"ALTER TABLE categories SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE products SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE shopping_carts SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE cart_products SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE orders SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE reviews SET SCHEMA {SCHEMA};")
     # ### end Alembic commands ###
 
 
