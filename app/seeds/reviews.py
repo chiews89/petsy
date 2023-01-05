@@ -26,7 +26,7 @@ def seed_reviews():
         review="Much ruin diet floofs sub woofer super woof, tongue floofs borkdrive good boys and girls, bork waggy wags. Small doggo with a long snoot for pats long doggo pupper pup, long water shoob very good spot boy dog, very jealous pupper waggy wags big old pupper.",
         rating=5,
         created_at=datetime.now(),
-        updated_at=datetime.now()
+        updated_at=datetime.now(),
     )
 
     review4 = Review(
