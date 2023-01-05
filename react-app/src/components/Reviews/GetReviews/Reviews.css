@@ -1,0 +1,40 @@
+.reviews-display {
+    width: 100%;
+    margin: 100px 0px 0px ;
+}
+
+.reviews-content {
+    height: 575px;
+    overflow: auto;
+    padding-right: 50px;
+    width: 400px;
+}
+
+.star-rating {
+    padding: 0px 0px 10px 0px;
+}
+
+.user-name {
+    padding: 30px 0px 10px 0px;
+}
+
+.delete-review-button {
+    background-color:  rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    color:white;
+    position: relative;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 20px 20px 10px 0px;
+}
+
+.delete-review-button:hover {
+    color: white;
+    background-color: rgba(106, 106, 106, 0.7);
+  }

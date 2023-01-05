@@ -1,0 +1,96 @@
+html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poster {
+  max-height: 75vh;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.footer {
+  background-color: #2f466c;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.footer-content {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 50px 24px 50px;
+}
+
+.team-members {
+  text-align: right;
+  width: 160px;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+
+.technologies {
+  text-align: left;
+  width: 160px;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.footer-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content li {
+  font-size: 13px;
+  padding: 6px 0;
+}
+
+.footer-links {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  text-decoration: underline;
+}
+
+.fa-github {
+  font-size: 30px;
+}
+
+.footer-bottom {
+  align-items: center;
+  background-color: #232347;
+  color: white;
+  display: flex;
+  height: 50px;
+  /* justify-content: center; */
+  padding-left: 36px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.footer-copyright {
+  padding-left: 20px;
+}

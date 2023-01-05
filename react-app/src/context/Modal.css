@@ -1,0 +1,122 @@
+#modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  #modal-content {
+    background-color:white;
+    border-radius: 8px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 484px;
+    padding: 32px 32px 32px 32px;
+    position: absolute;
+  }
+
+  .login-headers {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form-errors {
+    background-color: #fdb7ad;
+    border: 1px solid #fa604a;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 15px
+  }
+
+  .login-form-contents {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .login-email-container,
+  .login-password-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+  }
+
+  .login-password-container {
+    margin-top: 24px;
+  }
+
+  .login-email-container label,
+  .login-password-container label {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  #login-email,
+  #login-password {
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    width: 320px;
+    height: 22px;
+    padding: 8px 12px;
+    font-size: 100%;
+  }
+
+  .login-demo-user {
+    align-items: center;
+    display: flex;
+    margin-top: 24px;
+  }
+
+  .login-demo-user input {
+    height: 16px;
+    margin-right: 10px;
+    width: 16px;
+  }
+
+  .login-demo-user span {
+    font-size: 14px;
+  }
+
+  .login-form-button {
+    height: 45px;
+    padding: 8px 12px;
+    width: 346px;
+    background-color: #03A62C;
+    border-radius: 8px;
+    color: #fff;
+    padding: 8px 12px;
+    margin-top: 24px;
+    border: 0;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .login-not-member {
+    align-items: center;
+    width: 344px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-not-member span {
+    margin-right: 10px;
+  }
+
+  .login-not-member a {
+    color:  #02732A;
+    text-decoration: none;
+  }

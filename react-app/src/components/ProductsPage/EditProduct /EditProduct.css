@@ -1,0 +1,110 @@
+.edit-product-modal {
+  background-color: rgb(0, 0, 0);
+  /* box-sizing: border-box; */
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding: 15px 45px;
+  margin: 20px 20px 20px 0px;
+}
+
+.edit-product-modal:hover {
+  background-color: black;
+  color: rgba(248, 248, 248, 0.85);
+}
+
+.edit-product-container {
+  max-width: 500px;
+  padding: 0px;
+  margin: 0px;
+  background: transparent;
+  border-radius: 30px;
+  overflow-y: scroll;
+}
+.edit-product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.errors-list {
+  color: #a61a2e;
+  font-weight: 400;
+  font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans",
+    Arial, sans-serif;
+  transition: opacity 200ms ease-in;
+}
+
+.edit_product_input-bar {
+  box-shadow: 0 1px 4px 0 rgb(34 34 34 / 10%) inset;
+  border-color: rgba(34, 34, 34, 0.15);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  color: #222222;
+  display: block;
+  outline: none;
+  font-family: inherit;
+  width: 320px;
+  height: 40px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.edit_product_description_input-bar {
+  box-shadow: 0 1px 4px 0 rgb(34 34 34 / 10%) inset;
+  border-color: rgba(34, 34, 34, 0.15);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 6px;
+  color: #222222;
+  display: block;
+  outline: none;
+  font-family: inherit;
+  width: 320px;
+  height: 100px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.edit-product {
+  margin-left: 18px;
+}
+
+.edit-product-button {
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding: 15px 40px;
+  margin: 20px 20px 10px 0px;
+}
+
+.cancel-edit-button {
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  color: white;
+  position: relative;
+  text-align: center;
+  padding: 15px 40px;
+  margin: 20px 20px 10px 0px;
+}
